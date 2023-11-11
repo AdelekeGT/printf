@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_decimal - prints decimal or hexadecimal
+ * _handle_int - prints decimal or hexadecimald
  * @list: va_list from _printf
  *
  * Return: status
 */
-int print_decimal(va_list list)
+int _handle_int(va_list list)
 {
 	int integ, num_end, _dig;
 	unsigned int number;
@@ -38,5 +38,5 @@ int print_decimal(va_list list)
 		count++;
 	}
 	_putchar(num_end + '0');
-	return (count + 1);
+	return (count);
 }
