@@ -31,10 +31,12 @@ int _helper_print_hexa_upper_rev(unsigned int number)
 */
 int _handle_hexa_upper(va_list list)
 {
-	unsigned int num;
+	unsigned int num, nein = 0;
 	int count;
 
 	num = va_arg(list, unsigned int);
+	if (num < nein)
+		return (-1);
 	if (num == 0)
 	{
 		write(1, "0", 2);
