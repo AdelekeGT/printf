@@ -14,6 +14,7 @@ int _printf(const char *format, ...)
 		{"%%", _handle_perc},
 		{"%d", _handle_dec},
 		{"%i", _handle_int},
+		{"%b", _handle_bin},
 		{NULL, NULL}
 	};
 	int char_printed = 0, i, n = 0;

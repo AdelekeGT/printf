@@ -26,5 +26,6 @@ int _handle_str(va_list list);
 int _handle_perc(va_list list);
 int _handle_dec(va_list list);
 int _handle_int(va_list list);
+int _handle_bin(va_list list);
 
 #endif
