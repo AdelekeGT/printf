@@ -27,5 +27,13 @@ int _handle_perc(va_list list);
 int _handle_dec(va_list list);
 int _handle_int(va_list list);
 int _handle_bin(va_list list);
+int _handle_uns_dec(va_list list);
+int _helper_print_dec_rev(unsigned int number);
+int _handle_octa(va_list list);
+int _helper_print_octa_rev(unsigned int number);
+int _handle_hexa(va_list list);
+int _helper_print_hexa_rev(unsigned int number);
+int _handle_hexa_upper(va_list list);
+int _helper_print_hexa_upper_rev(unsigned int number);
 
 #endif

@@ -9,24 +9,24 @@
 int _printf(const char *format, ...)
 {
 	specifier specs[] = {
-		{"%c", _handle_ch},
-		{"%s", _handle_str},
-		{"%%", _handle_perc},
-		{"%d", _handle_dec},
-		{"%i", _handle_int},
-		{"%b", _handle_bin},
-		{NULL, NULL}
+		{"%c", _handle_ch}, {"%s", _handle_str},
+		{"%%", _handle_perc}, {"%d", _handle_dec},
+		{"%i", _handle_int}, {"%b", _handle_bin},
+		{"%u", _handle_uns_dec}, {"%o", _handle_octa},
+		{"%x", _handle_hexa}, {"%X", _handle_hexa_upper}, {NULL, NULL}
 	};
 	int char_printed = 0, i, n = 0;
 	va_list content;
 
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+		return (-1);
+	if (format[0] == '%' && format[1] == ' ')
+		return (-1);
 	va_start(content, format);
 	if (content == NULL)
-		write(1, "NULL", sizeof("NULL") - 1);
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 	{
-		va_end(content);
-		return (-1);
+		write(1, "(null)", sizeof("(null)") - 1);
+		return (6);
 	}
 	for (i = 0; format[i] != '\0'; i = i + n)
 	{

@@ -8,19 +8,23 @@
 */
 int _handle_dec(va_list list)
 {
-	int integ, num_end, _dig;
+	int integ, _dig;
 	unsigned int number;
 	int count = 0, _e = 1;
 
 	integ = va_arg(list, int);
-	number = (integ < 0) ? -integ : integ;
-	num_end = number % 10;
+	if (integ == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 
 	if (integ < 0)
 	{
 		_putchar('-');
 		count++;
 	}
+	number = (integ < 0) ? -integ : integ;
 
 	while ((number / 10) != 0)
 	{
@@ -37,6 +41,5 @@ int _handle_dec(va_list list)
 		_e = _e / 10;
 		count++;
 	}
-	_putchar(num_end + '0');
-	return (count + 1);
+	return (count);
 }
