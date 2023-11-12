@@ -13,7 +13,8 @@ int _printf(const char *format, ...)
 		{"%%", _handle_perc}, {"%d", _handle_dec},
 		{"%i", _handle_int}, {"%b", _handle_bin},
 		{"%u", _handle_uns_dec}, {"%o", _handle_octa},
-		{"%x", _handle_hexa}, {"%X", _handle_hexa_upper}, {NULL, NULL}
+		{"%x", _handle_hexa}, {"%X", _handle_hexa_upper}, {"%r", _handle_revs_strg},
+		{NULL, NULL}
 	};
 	int char_printed = 0, i, n = 0;
 	va_list content;
