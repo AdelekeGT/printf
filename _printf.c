@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 		{"%i", _handle_int}, {"%b", _handle_bin},
 		{"%u", _handle_uns_dec}, {"%o", _handle_octa},
 		{"%x", _handle_hexa}, {"%X", _handle_hexa_upper}, {"%r", _handle_revs_strg},
-		{"%S", _handle_nein_print}, {NULL, NULL}
+		{"%S", _handle_nein_print}, {"%p", _handle_p_addr}, {NULL, NULL}
 	};
 	int char_printed = 0, i, n = 0;
 	va_list content;

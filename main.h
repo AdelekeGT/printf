@@ -37,5 +37,6 @@ int _handle_hexa_upper(va_list list);
 int _helper_print_hexa_upper_rev(unsigned int number);
 int _handle_revs_strg(va_list list);
 int _handle_nein_print(va_list list);
+int _handle_p_addr(va_list list);
 
 #endif
