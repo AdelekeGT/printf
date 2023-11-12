@@ -9,7 +9,7 @@
 int _handle_revs_strg(va_list list)
 {
 	char *the_str;
-	int i, count = 0, length = 0;
+	int i_i, count = 0, _len = 0;
 
 	the_str = va_arg(list, char *);
 	if (the_str == NULL)
@@ -17,17 +17,17 @@ int _handle_revs_strg(va_list list)
 		write(1, "(null)", sizeof("(null)") - 1);
 		return (6);
 	}
-	if (*the_str == '\0')
+	if (*the_str == '\0' || *the_str == ' ')
 		return (-1);
 
-	while (the_str[length] != '\0')
-		length++;
-	if (length == 0)
+	while (the_str[_len] != '\0')
+		_len++;
+	if (_len == 0)
 		return (-1);
 
-	for (i = length - 1; i >= 0; i--)
+	for (i_i = _len - 1; i_i >= 0; i_i--)
 	{
-		_putchar(the_str[i]);
+		_putchar(the_str[i_i]);
 		count++;
 	}
 	return (count);
