@@ -21,8 +21,6 @@ int _handle_revs_strg(va_list list)
 
 	while (the_str[_len] != '\0')
 	{
-		if (!isspace((unsigned char)the_str[_len]))
-			break;
 		_len++;
 	}
 	if (_len == 0)
