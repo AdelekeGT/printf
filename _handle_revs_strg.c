@@ -14,8 +14,7 @@ int _handle_revs_strg(va_list list)
 	the_str = va_arg(list, char *);
 	if (the_str == NULL)
 	{
-		write(1, "(null)", sizeof("(null)") - 1);
-		return (6);
+		return (-1);
 	}
 	if (*the_str == '\0' || *the_str == ' ')
 		return (-1);
