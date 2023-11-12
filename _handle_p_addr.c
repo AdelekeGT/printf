@@ -9,7 +9,7 @@
 int _handle_p_addr(va_list list)
 {
 	void *_address;
-	unsigned long _addr_val;
+	unsigned long int _addr_val;
 	int count = 0;
 
 	_address = va_arg(list, void *);
@@ -19,7 +19,7 @@ int _handle_p_addr(va_list list)
 		write(1, "(nil)", sizeof("(nil)"));
 		return (5);
 	}
-	_addr_val = (unsigned long)_address;
+	_addr_val = (unsigned long int)_address;
 	write(1, "0x", 2);
 	count += _helper_print_hexa_rev(_addr_val) + 2;
 
