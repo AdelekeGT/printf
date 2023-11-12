@@ -6,6 +6,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <ctype.h>
 
 /**
  * struct the_formats - struct for formats
@@ -36,5 +37,6 @@ int _helper_print_hexa_rev(unsigned int number);
 int _handle_hexa_upper(va_list list);
 int _helper_print_hexa_upper_rev(unsigned int number);
 int _handle_revs_strg(va_list list);
+int _handle_nein_print(va_list list);
 
 #endif
