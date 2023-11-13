@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _putchar - prints character
+ * custom_putchar - prints character
  * @ch: character to be printed
  *
  * Return: int
 */
-int _putchar(char ch)
+int custom_putchar(char ch)
 {
 	return (write(1, &ch, 1));
 }

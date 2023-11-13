@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * _handle_str - handles char passed to ellipsis whether character or string
- * @list: va_list from _printf
+ * do_string - handles char passed to ellipsis whether character or string
+ * @data: va_list from _printf
  *
  * Return: status
 */
-int _handle_str(va_list list)
+int do_string(va_list data)
 {
 	char *str;
 	int count = 0, i = 0;
 
-	str = va_arg(list, char *);
+	str = va_arg(data, char *);
 	if (str == NULL)
 	{
 		write(1, "(null)", sizeof("(null)") - 1);
-		va_end(list);
+		va_end(data);
 		return (6);
 	}
 	while (str[i] != '\0')
