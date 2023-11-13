@@ -15,7 +15,7 @@ int do_rot13_func(va_list data)
 	_rot_ = va_arg(data, char *);
 	if (_rot_ == NULL)
 	{
-		write(1, "(null)", sizeof("(null)"));
+		write(1, "(null)", sizeof("(null)") - 1);
 		va_end(data);
 		return (6);
 	}

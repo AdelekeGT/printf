@@ -14,7 +14,7 @@ int do_string(va_list data)
 	str = va_arg(data, char *);
 	if (str == NULL)
 	{
-		write(1, "(null)", sizeof("(null)"));
+		write(1, "(null)", sizeof("(null)") - 1);
 		va_end(data);
 		return (6);
 	}
