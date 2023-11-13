@@ -20,21 +20,28 @@ int do_rot13_func(va_list data)
 	}
 	while (_rot_[_i] != '\0')
 	{
-		for (_j = 0; _alphas[_j] != '\0'; _j++)
+		if (_rot_[_i] >= '0' && _rot_[_i] <= 9)
 		{
-			if (_rot_[_i] == _alphas[_j])
+			write(1, _rot_[_i], sizeof(_rot_[_i]));
+			count++;
+		} else
+		{
+			for (_j = 0; _alphas[_j] != '\0'; _j++)
 			{
-				if ((_rot_[_i] >= 'A' && _rot_[_i] <= 'M') ||
-				(_rot_[_i] >= 'a' && _rot_[_i] <= 'm'))
+				if (_rot_[_i] == _alphas[_j])
 				{
-					custom_putchar(_rot_[_i] + 13);
-					count++;
-				}
-				else if ((_rot_[_i] >= 'N' && _rot_[_i] <= 'Z') ||
-				(_rot_[_i] >= 'n' && _rot_[_i] <= 'z'))
-				{
-					custom_putchar(_rot_[_i] - 13);
-					count++;
+					if ((_rot_[_i] >= 'A' && _rot_[_i] <= 'M') ||
+					(_rot_[_i] >= 'a' && _rot_[_i] <= 'm'))
+					{
+						custom_putchar(_rot_[_i] + 13);
+						count++;
+					}
+					else if ((_rot_[_i] >= 'N' && _rot_[_i] <= 'Z') ||
+					(_rot_[_i] >= 'n' && _rot_[_i] <= 'z'))
+					{
+						custom_putchar(_rot_[_i] - 13);
+						count++;
+					}
 				}
 			}
 		}
