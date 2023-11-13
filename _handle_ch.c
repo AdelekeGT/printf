@@ -12,6 +12,8 @@ int _handle_ch(va_list list)
 	int count = 0;
 
 	a_char = va_arg(list, int);
+	if (a_char == '\0' || a_char == 0)
+		return (-1);
 	write(1, &a_char, 1);
 	count++;
 

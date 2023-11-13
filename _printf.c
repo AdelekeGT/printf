@@ -28,6 +28,7 @@ int _printf(const char *format, ...)
 	{
 		write(1, "(null)", sizeof("(null)") - 1);
 		return (6);
+		va_end(content);
 	}
 	for (i = 0; format[i] != '\0'; i = i + n)
 	{

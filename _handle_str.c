@@ -15,6 +15,7 @@ int _handle_str(va_list list)
 	if (str == NULL)
 	{
 		write(1, "(null)", sizeof("(null)") - 1);
+		va_end(list);
 		return (6);
 	}
 	while (str[i] != '\0')
