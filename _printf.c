@@ -24,12 +24,6 @@ int _printf(const char *format, ...)
 	if (format[0] == '%' && format[1] == ' ')
 		return (-1);
 	va_start(content, format);
-	if (content == NULL)
-	{
-		write(1, "(null)", sizeof("(null)") - 1);
-		return (6);
-		va_end(content);
-	}
 	for (i = 0; format[i] != '\0'; i = i + n)
 	{
 		if (format[i] != '%')
