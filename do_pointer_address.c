@@ -20,7 +20,7 @@ int do_pointer_address(va_list data)
 		return (5);
 	}
 	_value_addr_ = (unsigned long)_p_addr_;
-	write(1, "0x", 2);
+	write(1, "0x", sizeof("0x"));
 	count += helper_print_hexadecimal_reverse(_value_addr_) + 2;
 
 	return (count);

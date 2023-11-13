@@ -38,5 +38,6 @@ int helper_print_hexadecimal_upper_reverse(unsigned int number);
 int do_reverse_string(va_list data);
 int do_non_printable(va_list ldata);
 int do_pointer_address(va_list data);
+int do_rot13_func(va_list data);
 
 #endif

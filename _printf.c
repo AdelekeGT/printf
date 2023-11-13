@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 		{"%u", do_unsigned_decimal}, {"%o", do_octal},
 		{"%x", do_hexadecimal}, {"%X", do_hexadecimal_upper},
 		{"%r", do_reverse_string}, {"%S", do_non_printable},
-		{"%p", do_pointer_address}, {NULL, NULL}
+		{"%p", do_pointer_address}, {"%R", do_rot13_func}, {NULL, NULL}
 	};
 	int _ch_printed = 0, i, n = 0;
 	va_list data;
