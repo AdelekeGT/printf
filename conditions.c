@@ -24,11 +24,6 @@ int conditions(struct the_formats s[], va_list list, const char *p)
 		} else if (*p == '\0')
 		{
 			return (-1);
-		} else if (*p != '\0')
-		{
-			write(1, p, 1);
-			i++;
-			break;
 		}
 	}
 	return (i);
