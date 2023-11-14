@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * do_char - handles char passed to ellipsis whether character or string
- * @data: va_list from _printf
+ * do_char - handles anything enclosed in single quotes passed in
+ * @data: represents the list of arguments from va_list
  *
- * Return: status
+ * Return: count
 */
 int do_char(va_list data)
 {

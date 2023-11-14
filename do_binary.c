@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * do_binary - handles printing of binary
- * @data: va_list from _printf
+ * do_binary - handles printing of binary numbers
+ * @data: represents the list of arguments from va_list
  *
  * Return: count
 */

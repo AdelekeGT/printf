@@ -2,7 +2,7 @@
 
 /**
  * do_rot13_func - prints rot13'ed string
- * @data: va_list from _printf
+ * @data: represents the list of arguments from va_list
  *
  * Return: count
 */

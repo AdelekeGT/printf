@@ -18,8 +18,8 @@ int helper_print_octal_reverse(unsigned int _number)
 }
 
 /**
- * do_octal - handles octal _number conversion
- * @data: va_list from _printf
+ * do_octal - handles the printing of base-8 numbers
+ * @data: represents the list of arguments from va_list
  *
  * Return: count
 */

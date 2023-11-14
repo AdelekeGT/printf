@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _printf - produces output according to a format
- * @format: pointer to constant string
+ * _printf - custom printf produces output according to a format
+ * @format: pointer to constant string; this will contain format specifers
+ * that will determined how printf will format output
  *
- * Return: number of characters printed
+ * Return: _ch_printed which is the number of characters printed
 */
 int _printf(const char *format, ...)
 {
@@ -40,3 +41,12 @@ int _printf(const char *format, ...)
 	va_end(data);
 	return (_ch_printed);
 }
+/*
+ * specs is an array of specifiers and their corresponding functions
+ *   to be called
+ * program checks for % and the character following it
+ * if none of the specifier characters match format[1], format[1] is printed
+ * if %% is encountered, one % is printed
+ * if foramt[i] matches one of the specifier characters,
+ *   do_instructions function is triggered
+*/

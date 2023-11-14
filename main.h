@@ -40,4 +40,4 @@ int do_non_printable(va_list data);
 int do_pointer_address(va_list data);
 int do_rot13_func(va_list data);
 
-#endif
+#endif /* MAIN_H */

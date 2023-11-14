@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * do_pointer_address - prints memory address
- * @data: va_list from _printf
+ * do_pointer_address - handles the printing of memory address & pointers
+ * @data: represents the list of arguments from va_list
  *
  * Return: count
  */

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * helper_print_hexadecimal_reverse - prints in reverse
+ * helper_print_hexadecimal_reverse - reverse printing function
  * @_number: _number to be printed
  *
  * Return: count
@@ -25,8 +25,8 @@ int helper_print_hexadecimal_reverse(unsigned int _number)
 }
 
 /**
- * do_hexadecimal - handles octal _number conversion
- * @data: va_list from _printf
+ * do_hexadecimal - handles the printing of base-16 numbers to lowercase
+ * @data: represents the list of arguments from va_list
  *
  * Return: count
 */

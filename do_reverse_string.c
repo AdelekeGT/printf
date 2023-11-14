@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * do_reverse_string - prints string in reverse
- * @data: va_list from _printf
+ * do_reverse_string - custom conversion of printing strings in reverse
+ * @data: represents the list of arguments from va_list
  *
  * Return: count
 */

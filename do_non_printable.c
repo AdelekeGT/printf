@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * do_non_printable - handles non-printable chars
+ * do_non_printable - handles the printing of non-printable chars
  * ASCII value > 0 || < 32 || >= 127
  * print \x in their place, followed by ASCII code
  * value of char in upper hexadecimal
- * @data: va_list from _printf
+ * @data: represents the list of arguments from va_list
  *
  * Return: count
 */

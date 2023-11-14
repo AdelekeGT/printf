@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * do_string - handles char passed to ellipsis whether character or string
- * @data: va_list from _printf
+ * do_string - handles printing of anything passed in double quotes,
+ * i.e, strings
+ * @data: represents the list of arguments from va_list
  *
  * Return: status
 */

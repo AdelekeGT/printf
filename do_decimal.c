@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * do_decimal - prints decimal or hexadecimal
- * @data: va_list from _printf
+ * do_decimal - handles the printing of integer type
+ * @data: represents the list of arguments from va_list
  *
- * Return: status
+ * Return: count
 */
 int do_decimal(va_list data)
 {

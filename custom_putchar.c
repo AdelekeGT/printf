@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * custom_putchar - prints character
+ * custom_putchar - prints single character to stdout
  * @ch: character to be printed
  *
  * Return: int

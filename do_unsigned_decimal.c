@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * helper_print_decimal_reverse - prints in reverse
+ * helper_print_decimal_reverse - prints integers in reverse
  * @_number: _number to be printed
  *
  * Return: count
@@ -18,8 +18,8 @@ int helper_print_decimal_reverse(unsigned int _number)
 }
 
 /**
- * do_unsigned_decimal - prints unsigned deciaml
- * @data: va_list from _printf
+ * do_unsigned_decimal - prints unsigned deciamal numbers
+ * @data: represents the list of arguments from va_list
  *
  * Return: count
 */
