@@ -20,11 +20,14 @@ int do_instructions(FormatSpecifier specs[], va_list data, const char *p)
 		if (*p == (specs[j].specifier[1]))
 		{
 			i += specs[j].handler(data);
-			break;
+			return (i);
 		} else if (*p == '\0')
 		{
 			return (-1);
 		}
 	}
+	write(1, "%", 1);
+	write(1, p, 1);
+	i += 2;
 	return (i);
 }
